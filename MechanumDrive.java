@@ -1,6 +1,8 @@
 /**
  * * @author Daniel Marzari 
  * 
+ *  REFER TO OTHER SCORCES FOR WHEEL ORIENTATION ****
+ *
  * getMechanumCoordinate(Coordinate point) - takes in a coordinate on the unit circle and converts it into the  
  *                                           motor group powers(two groups) in coordinate form on the unit circle.
  * 
@@ -46,6 +48,8 @@
  *      x = cos(135 - theta)                                x = cos(3PI/4 - theta) 
  *      
  */
+
+
 public class MechanumDrive {
     
     protected Coordinate getMechanumCoordinate(Coordinate point){        

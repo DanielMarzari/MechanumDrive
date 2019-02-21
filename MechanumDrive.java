@@ -65,15 +65,10 @@ public class MechanumDrive {
     
     private static class Coordinate {
         double x,y;
-        
-        void setX(double d){
-            //If d is within [-1,1] return d, otherwise return the closest number (1 or -1)
-            x = (Math.abs(d) < 1) ? d : ((d > 1) ? 1 : -1);
-        }
-        
-        void setY(double d){
-            //If d is within [-1,1] return d, otherwise return the closest number (1 or -1)
-            y = (Math.abs(d) < 1) ? d : ((d > 1) ? 1 : -1);
+        void setCoordiate(double newX, double newY){
+            //If either newX or newY is within [-1,1] return that value, otherwise return the closest number (1 or -1)
+            x = (Math.abs(newX) < 1) ? newX : ((newX > 1) ? 1 : -1);
+            y = (Math.abs(newY) < 1) ? newY : ((newY > 1) ? 1 : -1);
         }
     }
     
